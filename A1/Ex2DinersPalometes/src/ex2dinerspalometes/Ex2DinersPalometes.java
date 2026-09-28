@@ -12,17 +12,7 @@ import java.util.Scanner;
  */
 public class Ex2DinersPalometes {
 
-    /**
-     * Inicio
 
-
-
-
-
-
-
-
-FI     */
     public static void main(String[] args) {
         double dinersCartera, preuEntrada, preuEntradesTotal,dinersRestants;
         int numEntrades;
