@@ -14,7 +14,10 @@ public class Ex4AreaCirculo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        final double PI = 3.14;
+        double longitudCircunferencia, areaCirculo, radio;
+        
+        
     }
     
 }
