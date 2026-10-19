@@ -20,6 +20,7 @@ Introdueix pulsacions minut 1: 80
 Mitjana = 78.6 bpm
      */
     public static void main(String[] args) {
+        System.out.println("");
         Random generaLatidosAleatorios = new Random();
         int latidos, acumLatidos=0, minutos;
         double media;
