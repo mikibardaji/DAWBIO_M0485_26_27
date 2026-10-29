@@ -5,6 +5,7 @@
 package ex13adivinanumero;
 
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
@@ -21,23 +22,37 @@ public class Ex13AdivinaNumero {
      * i s’haurà de mostrar el nombre d’intents que s’han utilitzat.
      */
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         Random rd = new Random();
-        //variable intentos igual  a 0
+        int intents = 0;
+        int numJugador;
+        
+        System.out.println("L'ordinador pensara un numero....");
         //el random pensa un numero del 1 al 100
+        int numOrdinador = rd.nextInt(1,101);
         //el mostra (fase desarrollo
+        System.out.println("Ja hi ha numero ("+numOrdinador+")");
         
         //inici bucle
+        do{
             //demanar el numero
+            System.out.println("Endevina el numero entre 1 y 100:");
+            numJugador = scan.nextInt();
+
             //si el numero es mes gran que el random decir
             // que es mas grande
-            //si es mas pequeño decir que es mas pequeño
-            //si es igual , acertaste
-            //mientras no aciertas continua bucle
-            
-        //mostrar intentos... 
-           
-            
-            
+            if(numJugador>numOrdinador){
+                System.out.println("El teu numero es mes gran, torna a intentar..");
+            }else if(numJugador<numOrdinador){
+                System.out.println("El teu numero es mes petit, torna a intentar");
+            }else{
+                System.out.println("Has encertat!!!!");
+            }
+            intents++;      
+        }while(numOrdinador!=numJugador);
+        
+        System.out.println("Molt Be, has utilitzat "+intents+" intents");
+              
     }
     
 }
