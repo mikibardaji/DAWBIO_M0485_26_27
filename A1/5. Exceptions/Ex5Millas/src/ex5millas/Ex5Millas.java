@@ -39,6 +39,8 @@ public class Ex5Millas {
         num = sc.nextInt();
         return num;
     }    
+    
+    
     public static double millasAkm(int millas)
     {
         double resultado = millas * 1.6083;
