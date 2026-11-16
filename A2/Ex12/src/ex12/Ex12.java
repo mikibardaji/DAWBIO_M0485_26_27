@@ -21,7 +21,7 @@ public class Ex12 {
     public static void main(String[] args) {
         System.out.println("Preu sense descompte: ");
         double preuSenseDescompte = demanaPreu();
-        System.out.print("Ara escriu el preu amb descompte: ");
+        System.out.println("Ara escriu el preu amb descompte: ");
         double preuAmbDescompte = demanaPreu();
         calculaDescompte(preuSenseDescompte, preuAmbDescompte);
         
